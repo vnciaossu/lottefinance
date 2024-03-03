@@ -289,3 +289,6 @@ input[type="range"]:focus::-moz-range-thumb {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity)) !important;
 }
+.main-background{
+background-color: #f4f5f7;
+}
