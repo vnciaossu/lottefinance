@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333333;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Heading Styles */
+
+h1 {
+  font-size: 2.5rem; /* ~40px */
+}
+
+h2 {
+  font-size: 2rem !important; /* ~32px */
+}
+
+h3 {
+  font-size: 1.625rem !important; /* ~28px */
+}
+
+h4 {
+  font-size: 1.5rem !important; /* ~24px */
+  line-height: 1.8rem;
+}
+
+h5 {
+  font-size: 1.25rem !important; /* ~20px */
+}
+
+h6 {
+  font-size: 1.125rem !important; /* ~16px */
+}
+
+footer {
+  background-image: url("./public/footer_background.png");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -100px;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.207 4.793a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L6.5 9.086l4.293-4.293a1 1 0 0 1 1.414 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  background: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 50%;
+}
+
+/* input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #e7252b;
+} */
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+input[type="range"]:active::-moz-range-thumb {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+input[type="range"]:focus::-moz-range-thumb {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* range 3 */
+.range-slider {
+  flex: 1;
+}
+
+.container-box {
+  width: 1200px;
+}
+
+.container-mini-box {
+  width: 800px;
+}
+
+.padding-section {
+  padding-top: 5.5rem;
+}
+
+.margin-section {
+  margin-top: 5.5rem;
+}
+
+.background-red {
+  background-color: #e7252b;
+}
+
+.border-red {
+  border-color: #e7252b;
+}
+
+.border-purred {
+  border-color: #db036e;
+}
+
+.color-red {
+  color: #e7252b;
+}
+
+.background-top {
+  background-image: url("./public/background.png");
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rate-estimation-background {
+  background-image: url("./public/rate_estimation.png");
+  width: 100%;
+  height: 270px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gradient-text {
+  background-image: linear-gradient(104.22deg, #cc002e 0%, #ec1848 53.56%, #9a268f 110.57%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.form-register {
+  width: 450px;
+}
+
+.gradient-button {
+  background-image: linear-gradient(104.22deg, #cc002e 0%, #ec1848 53.56%, #9a268f 110.57%);
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+  transform: scale(1.02);
+}
+
+.list-scroll{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 5px 0 5px 5px;
+}
+
+.list-scroll .item {
+  width: 384px;
+  height: 359px;
+}
+@media (max-width: 768px) {
+  .container-box,
+  .container-mini-box {
+    width: 100%;
+    padding: 16px;
+  }
+
+
+  footer {
+    background-image: url("./public/footer_background_2.png");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+  }
+
+  #footer-background {
+    width: 60%;
+    height: auto;
+  }
+
+  .form-register {
+    width: 100%;
+  }
+
+  .padding-section {
+    padding-top: 4.5rem;
+  }
+
+  .background-top {
+    background-image: url("./public/background_top_mini.jpeg");
+    width: 100%;
+    height: 386px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: fill;
+    background-position: center;
+  }
+
+  .list-scroll {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 1));
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .list-scroll .item {
+    width: 320px !important;
+    height: 359px;
+  }
+
+  #features,
+  #tenor-plans,
+  #process-feedback,
+  #rate-estimation-form {
+    background-image: transparent;
+  }
+}
+#features {
+  background-image: url("./public/wave3.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right;
+}
+
+#tenor-plans {
+  background-image: url("./public/wave1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left;
+}
+
+#process-feedback {
+  background-image: url("./public/wave2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right;
+}
+
+#about-us {
+  background-image: url("./public/wave4.svg"), url("./public/wave6.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+
+#rate-estimation-form {
+  background-image: url("./public/wave5.svg"), url("./public/wave7.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+
+.customhover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity)) !important;
+}

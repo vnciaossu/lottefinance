@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>LOTTE Finance</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION BAR -->
+    <header
+      class="w-full sm:p-6 shadow-lg z-50 fixed bg-white flex justify-center"
+    >
+      <div class="container-box flex justify-between items-center">
+        <img src="./public/logo.png" alt="Lotte Finance" />
+        <div class="flex gap-10 justify-between items-center">
+          <div class="hidden sm:flex gap-6 justify-between items-center">
+            <a href="#anchor-features"><h6>Lợi ích</h6></a>
+            <a href="#anchor-tenor-plans"><h6>Các gói vay</h6></a>
+            <a href="#anchor-process"><h6>Quy trình vay</h6></a>
+            <a href="#anchor-feedback"><h6>Khách hàng</h6></a>
+            <a href="#anchor-about-us"><h6>Về chúng tôi</h6></a>
+            <a href="#anchor-fqa"><h6>Q&A</h6></a>
+          </div>
+          <a class="jump-to-form">
+            <button class="px-5 py-2 background-red text-white rounded-full uppercase">Đăng ký ngay</button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- REGISTER FORM -->
+    <section id="register-form" class="w-full padding-section">
+      <div class="relative w-full background-top flex justify-center">
+        <div
+          class="container-box flex flex-col pt-[90%] sm:pt-0 sm:flex-row items-center justify-end"
+        >
+          <div
+            class="absolute top-[92%] sm:static sm:top-0 flex flex-col mx-4 sm:mx-0 justify-end gap-3 p-8 border-t-4 border-purred oveflow-hidden bg-white rounded-xl drop-shadow-xl"
+          >
+            <h3 class="uppercase text-center font-semibold gradient-text">
+              Đăng ký khoản vay
+            </h3>
+            <form action="#" class="flex flex-col gap-2.5 form-register">
+              <div class="flex flex-col justify-start w-full gap-2">
+                <label for="fullName" class="font-light text-sm"
+                  >Họ và tên<span class="color-red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="fullName"
+                  class="font-light placeholder:font-light placeholder:text-sm border rounded-md px-4 py-2.5 border-gray-200"
+                  placeholder="Nhập họ và tên"
+                />
+              </div>
+              <div class="flex flex-col justify-start w-full gap-2">
+                <label for="phoneNumber" class="font-light text-sm"
+                  >Số điện thoại<span class="color-red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  class="font-light placeholder:font-light placeholder:text-sm border rounded-md px-4 py-2.5 border-gray-200"
+                  placeholder="Nhập số điện thoại"
+                />
+              </div>
+              <div class="flex flex-col justify-start w-full gap-2">
+                <label for="fullName" class="font-light text-sm"
+                  >Số tiền vay<span class="color-red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="amount"
+                  class="font-light placeholder:font-light placeholder:text-sm border rounded-md px-4 py-2.5 border-gray-200"
+                  placeholder="Nhập số tiền vay (tối đa 300.000.000 VND)"
+                />
+              </div>
+              <div class="flex flex-col justify-start w-full gap-2">
+                <label for="city" class="font-light text-sm"
+                  >Tỉnh/ Thành phố<span class="color-red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="city"
+                  class="font-light placeholder:font-light placeholder:text-sm border rounded-md px-4 py-2.5 border-gray-200"
+                  placeholder="Nhập tỉnh/ Thành phố"
+                />
+              </div>
+              <div class="flex flex-col justify-start w-full gap-2">
+                <label for="payment" class="font-light text-sm"
+                  >Hình thức nhận lương</label
+                >
+                <div class="flex justify-between items-center">
+                  <div class="flex flex-1 p-2 gap-2 items-center">
+                    <input
+                      checked
+                      id="banking"
+                      type="radio"
+                      name="receiving"
+                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                    />
+                    <label
+                      for="banking"
+                      class="text-sm font-light text-gray-900 dark:text-gray-300"
+                      >Chuyển khoản</label
+                    >
+                  </div>
+                  <div class="flex flex-1 p-2 gap-2 items-center">
+                    <input
+                      id="transfer"
+                      type="radio"
+                      name="receiving"
+                      class="w-4 h-4 block text-blue-600 bg-gray-100 border-gray-300"
+                    />
+                    <label
+                      for="transfer"
+                      class="text-sm w-auto font-light text-gray-900 dark:text-gray-300"
+                      >Nhận tiền mặt</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <button class="uppercase w-full py-4 gradient-button text-white">
+                ĐĂNG KÝ NGAY
+              </button>
+              <p class="font-light text-xs text-center">
+                Bằng việc tiếp tục, Tôi đồng ý để LOTTE Finance xử lý dữ liệu
+                <a href="#" class="inline-block align-bottom"
+                  ><img src="./public/info.svg" alt="Info"
+                /></a>
+              </p>
+
+              <div class="flex gap-2 px-4 sm:px-0 items-center">
+                <input
+                  checked
+                  id="agreement"
+                  type="checkbox"
+                  class="appearance-none w-5 h-5 border border-gray-300 cursor-pointer rounded-md transition duration-100 checked:bg-[#2F6BFF] checked:border-[#2F6BFF]"
+                />
+                <label
+                  for="checked-checkbox"
+                  class="text-xs font-light text-gray-900 dark:text-gray-300"
+                  >Tôi đồng ý với
+                  <a
+                    href="https://www.lottefinance.vn/web/service/customer/termAndCond/userDataPolicies?csrt=11640075599545901093"
+                    class="underline decoration-solid color-red"
+                    >Điều khoản Xử lý dữ liệu cá nhân</a
+                  >
+                  <br class="sm:hidden" />
+                  và
+                  <a
+                    href="https://www.lottefinance.vn/web/service/customer/termAndCond/loanTnC?csrt=11640075599545901093"
+                    class="underline decoration-solid color-red"
+                    >Điều khoản Giao dịch</a
+                  >
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="anchor-features" class="absolute bottom-20"></div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="pt-[660px] sm:py-0 flex flex-col sm:gap-8">
+      <!-- FEATURES -->
+      <section
+        id="features"
+        class="sm:relative pt-7 flex flex-col sm:gap-8 justify-between items-center"
+      >
+        <div
+          class="flex flex-col fixed right-4 bottom-[20%] sm:absolute gap-3 z-20 sm:right-10"
+        >
+          <img class="cursor-pointer" src="./public/phone.svg" alt="Phone " />
+          <img
+            class="cursor-pointer"
+            src="./public/messenger.svg"
+            alt="Messenger"
+          />
+        </div>
+        <div class="container-box flex flex-col">
+          <div class="flex flex-col gap-5 justify-between items-start">
+            <h2 class="font-semibold">Ưu điểm vượt trội</h2>
+            <hr class="w-[84px] background-red h-2" />
+          </div>
+        </div>
+        <div class="container-box flex flex-wrap justify-between gap-3 sm:gap-6 z-20">
+          <div
+            class="rounded-3xl shadow-lg flex flex-col w-[48%] sm:w-auto sm:flex-1 gap-4 justify-around cursor-pointer hover:bg-gray-50 transition items-center border border-gray-200 pt-5 sm:pt-3 pb-5"
+          >
+            <img
+              src="./public/money_bag.svg"
+              alt="Duyệt vay đến 300 triệu đồng"
+            />
+            <p class="font-semibold text-center">
+              Duyệt vay đến <br /><span class="color-red">300 triệu đồng</span>
+            </p>
+          </div>
+          <div
+            class="rounded-3xl shadow-lg flex flex-col w-[48%] sm:w-auto sm:flex-1 gap-4 justify-around cursor-pointer hover:bg-gray-50 transition items-center border border-gray-200 pt-5 sm:pt-3 pb-5"
+          >
+            <img
+              src="./public/document.svg"
+              alt="Thủ tục minh bạch, giải ngân nhanh chóng"
+            />
+            <p class="font-semibold text-center">
+              Thủ tục <span class="color-red">minh bạch</span>, <br />giải ngân
+              <span class="color-red">nhanh chóng</span>
+            </p>
+          </div>
+          <div
+            class="rounded-3xl shadow-lg flex flex-col w-[48%] sm:w-auto sm:flex-1 gap-4 justify-around cursor-pointer hover:bg-gray-50 transition items-center border border-gray-200 pt-5 sm:pt-3 pb-5"
+          >
+            <img
+              src="./public/calendar.svg"
+              alt="Thời hạn cho vay đến 48 tháng"
+            />
+            <p class="font-semibold text-center">
+              Thời hạn cho vay đến <br /><span class="color-red">48 tháng</span>
+            </p>
+          </div>
+          <div
+          style="background: #fff;"
+            class="customhover rounded-3xl shadow-lg flex flex-col w-[48%] sm:w-auto sm:flex-1 gap-4 justify-around cursor-pointer hover:bg-gray-50 transition items-center border border-gray-200 pt-5 sm:pt-3 pb-5"
+          >
+            <img src="./public/rate.svg" alt="Lãi suất cạnh tranh" />
+            <p class="font-semibold text-center">
+              Lãi suất <span class="color-red">cạnh tranh</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROMOTION BANNER -->
+      <section id="promotion" class="relative flex justify-center items-center">
+        <div class="container-box">
+          <img
+            src="./public/promotion.png"
+            class="hidden sm:inline cursor-pointer"
+            alt="Promotion"
+          />
+          <img
+            src="./public/mini_promotion.png"
+            class="inline sm:hidden rounded-2xl shadow-md cursor-pointer"
+            alt="Promotion"
+          />
+        </div>
+        <div id="anchor-tenor-plans" class="absolute bottom-20"></div>
+      </section>
+
+      <!-- TENOR PLANS -->
+      <section
+        id="tenor-plans"
+        class="flex flex-col sm:gap-8 justify-between items-center"
+      >
+        <div class="container-box flex flex-col">
+          <div class="flex flex-col gap-5 justify-between items-start">
+            <h2 class="font-semibold">Các gói vay ưu đãi</h2>
+            <hr class="w-[84px] background-red h-2" />
+          </div>
+        </div>
+        <div
+          class="container-box flex flex-row flex-wrap justify-between gap-3 sm:gap-6"
+        >
+          <div
+            class="relative flex-grow w-full sm:w-[30%] h-[550px] rounded-2xl shadow-lg flex hover:bg-gray-50 transition items-center pt-3 pb-5"
+          >
+            <img
+              src="./public/plan1.jpeg"
+              class="block rounded-2xl absolute inset-0  h-[60%]"
+              alt="Plan 1"
+            />
+            <div
+              class="flex flex-col gap-2 absolute bg-gradient-to-t from-white via-white via-70% to-transparent w-full px-4 pb-5 pt-24 bottom-0 rounded-b-2xl z-10"
+            >
+              <h4 class="color-red font-semibold">
+                Cho vay khách hàng <br> có nguồn thu nhập từ lương
+              </h4>
+              <p class="font-light text-sm">
+                Khách hàng là công nhân, đang làm việc chính thức tại các công
+                ty với thu nhập chỉ từ 4 triệu đồng đã có thể vay với lãi suất
+                hấp dẫn
+              </p>
+              <div class="flex flex-col gap-2">
+                <hr />
+                <div class="flex justify-between gap-3">
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Số tiền vay (tối đa)</p>
+                    <h5 class="color-red font-semibold">100 triệu</h5>
+                  </div>
+                  <div class="border-l border-gray-300 h-12 mx-auto"></div>
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Lãi suất (tạm tính)</p>
+                    <div class="flex items-center gap-1">
+                      <h5 class="color-red font-semibold">0.94%</h5>
+                      <span class="font-light"> /tháng</span>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex-grow w-full sm:w-[30%] h-[550px] rounded-2xl shadow-lg flex hover:bg-gray-50 transition items-center pt-3 pb-5"
+          >
+            <img
+              src="./public/plan2.jpeg"
+              class="block rounded-2xl absolute inset-0  "
+              alt="Plan 3"
+            />
+            <div
+              class="flex flex-col gap-2 absolute bg-gradient-to-t from-white via-white via-70% to-transparent w-full px-4 pb-5 pt-24 bottom-0 rounded-b-2xl z-10"
+            >
+              <h4 class="color-red font-semibold">
+                Cho vay khách hàng <br>  là nhân viên nhà nước
+              </h4>
+              <p class="font-light text-sm">
+                Dành cho Khách hàng là cán bộ, công chức, viên chức.... Nhà nước
+                với thu nhập chỉ từ 3 triệu đồng
+                &ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;
+              </p>
+        
+              <div class="flex flex-col gap-2">
+                <hr />
+                <div class="flex justify-between gap-3">
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Số tiền vay (tối đa)</p>
+                    <h5 class="color-red font-semibold">300 triệu</h5>
+                  </div>
+                  <div class="border-l border-gray-300 h-12 mx-auto"></div>
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Lãi suất (tạm tính)</p>
+                    <div class="flex items-center gap-1">
+                      <h5 class="color-red font-semibold">0.94%</h5>
+                      <span class="font-light"> /tháng</span>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex-grow w-full sm:w-[30%] h-[550px] rounded-2xl shadow-lg flex hover:bg-gray-50 transition items-center pt-3 pb-5"
+          >
+            <img
+              src="./public/plan3.jpeg"
+              class="block rounded-2xl absolute inset-0 "
+              alt="Plan 3"
+            />
+            <div
+              class="flex flex-col gap-2 absolute bg-gradient-to-t from-white via-white via-70% to-transparent w-full px-4 pb-5 pt-24 bottom-0 rounded-b-2xl z-10"
+            >
+              <h4 class="color-red font-semibold">
+                Cho vay khách hàng là phụ nữ
+              </h4>
+              <p class="font-light text-sm">
+                Chỉ cần có thu nhập từ 3 triệu đồng, khách hàng hoặc có chồng KH
+                sở hữu xe máy đã đăng ký có thể vay với lãi suất ưu đãi
+              </p>
+              <div class="flex flex-col gap-2">
+                <hr />
+                <div class="flex justify-between gap-3">
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Số tiền vay (tối đa)</p>
+                    <h5 class="color-red font-semibold">50 triệu</h5>
+                  </div>
+                  <div class="border-l border-gray-300 h-12 mx-auto"></div>
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Lãi suất (tạm tính)</p>
+                    <div class="flex items-center gap-1">
+                      <h5 class="color-red font-semibold">1.04%</h5>
+                      <span class="font-light"> /tháng</span>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex-grow w-full sm:w-[30%] h-[550px] rounded-2xl shadow-lg flex hover:bg-gray-50 transition items-center pt-3 pb-5"
+          >
+            <img
+              src="./public/plan4.jpeg"
+              class="block rounded-2xl absolute inset-0  "
+              alt="Plan 4"
+            />
+            <div
+              class="flex flex-col gap-2 absolute bg-gradient-to-t from-white via-white via-70% to-transparent w-full px-4 pt-24 py-5 bottom-0 rounded-b-2xl z-10"
+            >
+              <h4 class="color-red font-semibold">
+                Cho vay khách hàng <br> có hợp đồng bảo hiểm nhân thọ
+              </h4>
+              <p class="font-light text-sm">
+                Dành cho Khách hàng hoặc vợ/chồng KH có hợp đồng bảo hiểm nhân
+                thọ, đóng phí từ 5 triệu đồng/năm với thủ tục đơn giản, nhanh
+                chóng
+              </p>
+              <div class="flex flex-col gap-2">
+                <hr />
+                <div class="flex justify-between gap-3">
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Số tiền vay (tối đa)</p>
+                    <h5 class="color-red font-semibold">100 triệu</h5>
+                  </div>
+                  <div class="border-l border-gray-300 h-12 mx-auto"></div>
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Lãi suất (tạm tính)</p>
+                    <div class="flex items-center gap-1">
+                      <h5 class="color-red font-semibold">2.03%</h5>
+                      <span class="font-light"> /tháng</span>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex-grow w-full sm:w-[30%] h-[550px] rounded-2xl shadow-lg flex hover:bg-gray-50 transition items-center pt-3 pb-5"
+          >
+            <img
+              src="./public/plan5.jpeg"
+              class="block rounded-2xl absolute inset-0  "
+              alt="Plan 5"
+            />
+            <div
+              class="flex flex-col gap-2 absolute bg-gradient-to-t from-white via-white via-70% to-transparent w-full px-4 pb-5 pt-24 bottom-0 rounded-b-2xl z-10"
+            >
+              <h4 class="color-red font-semibold">
+                Cho vay khách hàng có lịch sử vay tại các tổ chức tín dụng
+              </h4>
+              <p class="font-light text-sm">
+                Giải ngân trực tiếp, thủ tục nhanh gọn cho Khách hàng có khoản
+                vay và lịch sử trả nợ tốt tại Công ty tài chính khác hoặc Ngân
+                hàng, và thu nhập chỉ từ 3 triệu đồng
+              </p>
+              <div class="flex flex-col gap-2">
+                <hr />
+                <div class="flex justify-between gap-3">
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Số tiền vay (tối đa)</p>
+                    <h5 class="color-red font-semibold">100 triệu</h5>
+                  </div>
+                  <div class="border-l border-gray-300 h-12 mx-auto"></div>
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Lãi suất (tạm tính)</p>
+                    <div class="flex items-center gap-1">
+                      <h5 class="color-red font-semibold">1.98%</h5>
+                      <span class="font-light"> /tháng</span>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex-grow w-full sm:w-[30%] h-[550px] rounded-2xl shadow-lg flex hover:bg-gray-50 transition items-center pt-3 pb-5"
+          >
+            <img
+              src="./public/plan6.jpeg"
+              class="block rounded-2xl absolute inset-0
+              alt="Plan 6"
+            />
+            <div
+              class="flex flex-col gap-2 absolute bg-gradient-to-t from-white via-white via-70% to-transparent w-full px-4 pb-5 pt-24 bottom-0 rounded-b-2xl z-10"
+            >
+              <h4 class="color-red font-semibold">
+                Cho vay khách hàng <br> là chủ kinh doanh
+              </h4>
+              <p class="font-light text-sm">
+                Chỉ cần cung cấp sao kê ngân hàng, Khách hàng là chủ hộ kinh
+                doanh, chủ doanh nghiệp, kinh doanh online có thể được hỗ trợ
+                khoản vay nhanh chóng, chớp cơ hội kinh doanh
+              </p>
+              <div class="flex flex-col gap-2">
+                <hr />
+                <div class="flex justify-between gap-3">
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Số tiền vay (tối đa)</p>
+                    <h5 class="color-red font-semibold">60 triệu</h5>
+                  </div>
+                  <div class="border-l border-gray-300 h-12 mx-auto"></div>
+                  <div class="flex flex-col flex-1">
+                    <p class="text-sm font-bold">Lãi suất (tạm tính)</p>
+                    <div class="flex items-center gap-1">
+                      <h5 class="color-red font-semibold">3.2%</h5>
+                      <span class="font-light"> /tháng</span>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RATE ESTIMATION -->
+      <section id="rate-estimate" class="relative hidden sm:block">
+        <section id="rate-estimation" class="flex flex-col gap-8 justify-between items-center py-6">
+          <div class="container-box">
+            <div class="rate-estimation-background">
+              <div
+                class="flex flex-col gap-6 justify-center items-start pl-[140px] py-8"
+              >
+                <div
+                  class="text-white container-box flex flex-col z-10 max-w-fit"
+                >
+                  <div class="flex flex-col gap-3 justify-center items-start">
+                    <h2 class="font-semibold">Ước tính khoản vay</h2>
+                    <hr class="w-[84px] bg-white h-1.5" />
+                    <p class="font-light">
+                      Ước tính số tiền Quý khách cần thanh toán hàng tháng
+                      dựa<br />
+                      trên số tiền vay, thời hạn và lãi suất vay
+                    </p>
+                  </div>
+                </div>
+                <button
+                  id="rate-estimation-btn"
+                  class="px-5 py-2 max-w-fit flex gap-2 font-semibold items-center justify-between bg-white color-red rounded-full"
+                >
+                  <span>Ước tính ngay</span>
+                  <img src="./public/red_arrow_right.svg" alt="Đăng ký ngay" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="rate-estimation-form"
+          class="relative hidden flex-col bg-[#FEE8E8] py-12 gap-8 justify-between items-center"
+        >
+          <div class="container-box flex justify-between">
+            <div
+              class="flex justify-between gap-14 p-8 border-t-4 border-purred oveflow-hidden bg-white rounded-xl drop-shadow-xl"
+            >
+              <div class="flex flex-col w-1/2 gap-6">
+                <h2 class="font-semibold gradient-text">Ước tính khoản vay</h2>
+                <form action="#" class="flex flex-col gap-6 form-register">
+                  <div class="flex flex-col justify-start w-full gap-4">
+                    <div class="flex justify-between items-center">
+                      <label
+                        for="amount-rate"
+                        class="block mb-2 text-sm font-medium"
+                        ><h5>Số tiền vay (VND)</h5></label
+                      >
+                      <div class="border border-red p-2 pl-4 rounded-lg">
+                        <p>
+                          <span id="amount-rate-result"></span>
+                          <span class="text-gray-400">VND</span>
+                        </p>
+                      </div>
+                    </div>
+                    <input
+                      id="amount-rate"
+                      type="range"
+                      min="10000000"
+                      max="300000000"
+                      step="5000000"
+                      class="w-full h-1 bg-[#FFDAD6] accent-white rounded-lg appearance-none cursor-pointer range-sm"
+                    />
+                    <div class="flex justify-between">
+                      <p class="text-gray-400">10.000.000 VND</p>
+                      <p class="text-gray-400">300.000.000 VND</p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col justify-start w-full gap-4">
+                    <div class="flex justify-between items-center">
+                      <label for="month" class="block mb-2 text-sm font-medium"
+                        ><h5>Thời gian vay (tháng)</h5></label
+                      >
+                      <div class="border border-red p-2 pl-4 rounded-lg">
+                        <p>
+                          <span id="month-result"></span>
+                          <span class="text-gray-400">tháng</span>
+                        </p>
+                      </div>
+                    </div>
+                    <input
+                      id="month"
+                      type="range"
+                      min="6"
+                      max="48"
+                      class="w-full h-1 bg-[#FFDAD6] accent-white rounded-lg appearance-none cursor-pointer range-sm"
+                    />
+                    <div class="flex justify-between">
+                      <p class="text-gray-400">6 tháng</p>
+                      <p class="text-gray-400">48 tháng</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="p-6 flex w-1/2 flex-col items-center justify-between gap-4 text-center rounded-2xl bg-[#FFECEE]"
+              >
+                <h5 class="font-semibold">Số tiền phải trả hàng tháng</h5>
+                <div
+                  class="flex bg-[#FFDBDB] w-full justify-center rounded-lg border py-7 border-[#E7252B] border-dashed gap-2 items-center"
+                >
+                  <h2 class="font-semibold" id="invoice-amount"></h2>
+                  <h3>VND</h3>
+                </div>
+                <p class="px-2 text-sm">
+                  <span class="font-semibold text-base color-red">*Lưu ý:</span>
+                  Kết quả tính toán này chỉ mang tính chất tham khảo và có thể
+                  sai lệch nhỏ với kết quả tính toán thực tế
+                </p>
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="anchor-process" class="absolute bottom-20"></div>
+      </section>
+
+      <section id="process-feedback">
+        <!-- PROCESS -->
+        <section id="process" class="relative flex flex-col sm:gap-8 justify-between items-center sm:py-6">
+          <div class="container-box flex flex-col">
+            <div class="flex flex-col gap-5 justify-between items-start">
+              <h2 class="font-semibold">Quy trình đăng kí vay</h2>
+              <hr class="w-[84px] background-red h-2" />
+            </div>
+          </div>
+          <div class="relative w-full flex justify-center items-center">
+            <!-- <div class="container-box absolute -z-10">
+            <hr class="dashed w-full border-red border-dashed" />
+          </div> -->
+            <div
+              class="container-box z-10 flex flex-row flex-wrap justify-between gap-3 sm:gap-6"
+            >
+              <div
+                class="rounded-3xl shadow-md sm:shadow-lg flex flex-col gap-2 justify-start items-center border border-gray-200 w-[48%] flex-grow sm:w-auto sm:flex-1 pt-6 pb-4"
+              >
+                <img
+                  src="./public/note.svg"
+                  alt="Duyệt vay đến 300 triệu đồng"
+                />
+                <div class="p-3.5 text-center flex flex-col gap-2">
+                  <h6 class="color-red font-semibold">1. Đăng ký vay</h6>
+                  <p class="font-light text-xs">
+                    Khách hàng liên hệ Hotline: 1900-6866 hoặc để lại thông tin
+                    trên website, app để được tư vấn miễn phí
+                  </p>
+                </div>
+              </div>
+              <div
+                class="rounded-3xl shadow-md sm:shadow-lg flex flex-col gap-2 justify-start items-center border border-gray-200 w-[48%] flex-grow sm:w-auto sm:flex-1 pt-6 pb-4"
+              >
+                <img
+                  src="./public/submit.svg"
+                  alt="Thủ tục minh bạch, giải ngân nhanh chóng"
+                />
+                <div class="p-3.5 text-center flex flex-col gap-2">
+                  <h6 class="color-red font-semibold">2. Nộp hồ sơ vay</h6>
+                  <p class="font-light text-xs">
+                    Sau khi được nhân viên của LOTTE Finance tư vấn về sản phẩm,
+                    Khách hàng chọn khoản vay phù hợp và nộp hồ sơ trực tiếp
+                    hoặc online
+                  </p>
+                </div>
+              </div>
+              <div
+                class="rounded-3xl shadow-md sm:shadow-lg flex flex-col gap-2 justify-start items-center border border-gray-200 w-[48%] flex-grow sm:w-auto sm:flex-1 pt-6 pb-4"
+              >
+                <img
+                  src="./public/mark.svg"
+                  alt="Thời hạn cho vay đến 48 tháng"
+                />
+                <div class="p-3.5 text-center flex flex-col gap-2">
+                  <h6 class="color-red font-semibold">
+                    3. Thẩm định & <br />phê duyệt hồ sơ
+                  </h6>
+                  <p class="font-light text-xs">
+                    Dựa trên hồ sơ Khách hàng cung cấp, LOTTE Finance sẽ thẩm
+                    định và gửi đến Khách hàng kết quả phê duyệt
+                  </p>
+                </div>
+              </div>
+              <div
+                class="rounded-3xl shadow-md sm:shadow-lg flex flex-col gap-2 justify-start items-center border border-gray-200 w-[48%] flex-grow sm:w-auto sm:flex-1 pt-6 pb-4"
+              >
+                <img src="./public/saving.svg" alt="Lãi suất cạnh tranh" />
+                <div class="p-3.5 text-center flex flex-col gap-2">
+                  <h6 class="color-red font-semibold">4. Nhận giải ngân</h6>
+                  <p class="font-light text-xs">
+                    Sau khi ký hợp đồng vay, Khách hàng nhận tiền trực tiếp qua
+                    tài khoản ngân hàng hoặc tại điểm giao dịch từ đối tác của
+                    LOTTE Finance như VNPost, Vietinbank,….
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="anchor-feedback" class="absolute bottom-20"></div>
+        </section>
+
+        <!-- FEEDBACK -->
+        <section id="feedback" class="relative flex flex-col sm:gap-8 justify-between items-center pb-6 sm:py-6">
+          <div class="container-box flex flex-col">
+            <div class="flex flex-col gap-5 justify-between items-start">
+              <h2 class="font-semibold">Khách hàng nói về chúng tôi</h2>
+              <hr class="w-[84px] background-red h-2" />
+            </div>
+          </div>
+          <div class="container-box relative flex justify-between gap-6 ">
+            <button
+              class="absolute bg-white w-7 sm:w-12 h-7 sm:h-12 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-full flex justify-center items-center left-1 sm:-left-[24px] top-[40%]"
+              onclick="showSlider('prev')"
+            >
+              <img
+                src="./public/big_arrow_left.svg"
+                class="w-3 sm:w-5 h-3 sm:h-5 mr-0.5 sm:mr-1"
+                alt="prev"
+              />
+            </button>
+            <div class="container-box relative justify-between gap-6 list-scroll">
+              <div
+                class="flex-grow rounded-2xl w-[30%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex items-center pt-3 pb-5 item"
+              >
+                <div
+                  class="flex flex-col gap-6 justify-between items-center w-full p-4 rounded-b-2xl"
+                >
+                  <div class="relative">
+                    <img
+                      src="./public/cust1.png"
+                      alt="cust 1"
+                      class="w-32 h-32 object-cover rounded-full border-4 border-red"
+                    />
+                    <img
+                      src="./public/double_quote.svg"
+                      class="absolute -bottom-2 -right-2"
+                      alt="double quote"
+                    />
+                  </div>
+                  <p class="font-light text-sm text-center">
+                    Nhờ LOTTE Finance tôi có thể cân đối các nhu cầu mua sắm
+                    hàng ngày và chủ động chi trả cho các tình huống khẩn cấp
+                  </p>
+                  <div class="flex justify-between">
+                    <div
+                      class="flex flex-col flex-2 text-center items-center gap-3"
+                    >
+                      <div
+                        class="background-red w-2.5 h-2.5 rounded-full"
+                      ></div>
+                      <div class="flex flex-col gap-1.5 items-center">
+                        <h5 class="color-red font-semibold">Chị Vân Anh</h5>
+                        <p class="text-sm font-light text-gray-400">
+                          Giáo viên
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class=" flex-grow rounded-2xl w-[30%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] sm:flex items-center pt-3 pb-5 item"
+              >
+                <div
+                  class="flex flex-col gap-6 justify-between items-center w-full p-4 rounded-b-2xl"
+                >
+                  <div class="relative">
+                    <img
+                      src="./public/cust2.png"
+                      alt="cust 1"
+                      class="w-32 h-32 object-cover rounded-full border-4 border-red"
+                    />
+                    <img
+                      src="./public/double_quote.svg"
+                      class="absolute -bottom-2 -right-2"
+                      alt="double quote"
+                    />
+                  </div>
+                  <p class="font-light text-sm text-center">
+                    Là người có 2 con nhỏ, chi phí ăn học cho các con hàng tháng
+                    với tôi rất lớn. LOTTE Finance đã giúp tôi có một khoản tiền
+                    dự phòng để yên tâm chăm lo cho các con
+                  </p>
+                  <div class="flex justify-between">
+                    <div
+                      class="flex flex-col flex-2 text-center items-center gap-3"
+                    >
+                      <div
+                        class="background-red w-2.5 h-2.5 rounded-full"
+                      ></div>
+                      <div class="flex flex-col gap-1.5 items-center">
+                        <h5 class="color-red font-semibold">Chị Hồng Anh</h5>
+                        <p class="text-sm font-light text-gray-400">Nội trợ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class=" flex-grow rounded-2xl w-[30%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] sm:flex items-center pt-3 pb-5 item"
+              >
+                <div
+                  class="flex flex-col gap-6 justify-between items-center w-full p-4 rounded-b-2xl"
+                >
+                  <div class="relative">
+                    <img
+                      src="./public/cust3.jpeg"
+                      alt="cust 1"
+                      class="w-32 h-32 object-cover rounded-full border-4 border-red"
+                    />
+                    <img
+                      src="./public/double_quote.svg"
+                      class="absolute -bottom-2 -right-2"
+                      alt="double quote"
+                    />
+                  </div>
+                  <p class="font-light text-sm text-center">
+                    Tôi hoàn toàn hài lòng khi vay tại LOTTE Finance. Các thủ
+                    tục vay rất đơn giản và tôi đã nhận được tiền giải ngân
+                    nhanh chóng
+                  </p>
+                  <div class="flex justify-between">
+                    <div
+                      class="flex flex-col flex-2 text-center items-center gap-3"
+                    >
+                      <div
+                        class="background-red w-2.5 h-2.5 rounded-full"
+                      ></div>
+                      <div class="flex flex-col gap-1.5 items-center">
+                        <h5 class="color-red font-semibold">Anh Tiến Hưng</h5>
+                        <p class="text-sm font-light text-gray-400">
+                          Quản đốc phân xưởng
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class=" flex-grow rounded-2xl w-[30%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] sm:flex items-center pt-3 pb-5 item"
+              >
+                <div
+                  class="flex flex-col gap-6 justify-between items-center w-full p-4 rounded-b-2xl"
+                >
+                  <div class="relative">
+                    <img
+                      src="./public/cust4.png"
+                      alt="cust 1"
+                      class="w-32 h-32 object-cover rounded-full border-4 border-red"
+                    />
+                    <img
+                      src="./public/double_quote.svg"
+                      class="absolute -bottom-2 -right-2"
+                      alt="double quote"
+                    />
+                  </div>
+                  <p class="font-light text-sm text-center">
+                    Chính sách của bên LOTTE Finance rất tốt nên tôi yên tâm sử
+                    dụng dịch vụ của LOTTE Finance. Các bạn nhân viên tư vấn rất
+                    nhiệt tình, nhanh chóng
+                  </p>
+                  <div class="flex justify-between">
+                    <div
+                      class="flex flex-col flex-2 text-center items-center gap-3"
+                    >
+                      <div
+                        class="background-red w-2.5 h-2.5 rounded-full"
+                      ></div>
+                      <div class="flex flex-col gap-1.5 items-center">
+                        <h5 class="color-red font-semibold">Anh Xuân Đạt</h5>
+                        <p class="text-sm font-light text-gray-400">
+                          Nhân viên văn phòng
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class=" flex-grow rounded-2xl w-[30%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] sm:flex items-center pt-3 pb-5 item"
+              >
+                <div
+                  class="flex flex-col gap-6 justify-between items-center w-full p-4 rounded-b-2xl"
+                >
+                  <div class="relative">
+                    <img
+                      src="./public/cust5.png"
+                      alt="cust 1"
+                      class="w-32 h-32 object-cover rounded-full border-4 border-red"
+                    />
+                    <img
+                      src="./public/double_quote.svg"
+                      class="absolute -bottom-2 -right-2"
+                      alt="double quote"
+                    />
+                  </div>
+                  <p class="font-light text-sm text-center">
+                    Khi gia đình có khoản chi đột xuất, nhờ có khoản vay kịp
+                    thời từ LOTTE Finance, tôi và gia đình đã có thể nhanh chóng
+                    ổn định cuộc sống
+                  </p>
+                  <div class="flex justify-between">
+                    <div
+                      class="flex flex-col flex-2 text-center items-center gap-3"
+                    >
+                      <div
+                        class="background-red w-2.5 h-2.5 rounded-full"
+                      ></div>
+                      <div class="flex flex-col gap-1.5 items-center">
+                        <h5 class="color-red font-semibold">Chị Vân</h5>
+                        <p class="text-sm font-light text-gray-400">Nữ y tá</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="absolute bg-white w-7 sm:w-12 h-7 sm:h-12 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-full flex justify-center items-center right-1 sm:-right-[24px] top-[40%]"
+              onclick="showSlider('next')"
+            >
+              <img
+                src="./public/big_arrow_left.svg"
+                class="w-3 sm:w-5 h-3 sm:h-5 rotate-180 ml-0.5 sm:ml-1"
+                alt="prev"
+              />
+            </button>
+          </div>
+          <div id="anchor-about-us" class="absolute bottom-20"></div>
+        </section>
+      </section>
+
+      <!-- ABOUT US -->
+      <section id="about-us" class="relative bg-[#FFE8E8] flex flex-col sm:gap-8 justify-between items-center">
+        <div class="container-box flex flex-col sm:flex-row justify-between">
+          <div
+            class="flex flex-col pb-2 pt-6 sm:py-6 gap-4 sm:gap-5 justify-around items-start"
+          >
+            <h2 class="font-semibold">Giới thiệu công ty</h2>
+            <hr class="w-[84px] background-red h-2" />
+            <p>
+              Với phương châm “Gia tăng giá trị, nâng tầm cuộc sống”, LOTTE
+              Finance đồng hành cùng khách hàng trong mọi nhu cầu tài chính hàng
+              ngày như cho vay tiêu dùng tín chấp, cho vay mua ô tô, dịch vụ Mua
+              trước trả sau, phát hành thẻ tín dụng,…
+            </p>
+            <p>
+              LOTTE Finance luôn nỗ lực đi đầu thị trường về sự minh bạch trong
+              giao dịch tài chính, nhằm cung cấp những sản phẩm, dịch vụ uy tín
+              tới khách hàng và góp phần đẩy lùi tín dụng đen tại Việt Nam.
+            </p>
+            <a class="jump-to-form">
+              <button
+                class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+              >
+                <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+            ></a>
+          </div>
+          <img
+            src="./public/lotte_finance.png"
+            class="hidden sm:inline h-[410px]"
+            alt="Lotte Finance"
+          />
+        </div>
+        <img src="./public/lotte_finance_1.png" class="sm:hidden h-[410px]" alt="Lotte Finance" />
+
+        <div id="anchor-fqa" class="absolute bottom-20"></div>
+      </section>
+
+      <!-- FQA -->
+      <section
+        id="fqa"
+        class="flex flex-col gap-8 justify-between items-center py-6"
+      >
+        <div class="container-mini-box flex flex-col gap-8">
+          <div class="flex flex-col gap-5 justify-center items-center">
+            <h2 class="font-semibold">Câu hỏi thường gặp</h2>
+            <hr class="w-[84px] background-red h-2" />
+          </div>
+          <div class="flex flex-col justify-between">
+            <hr />
+            <div class="flex flex-col">
+              <div class="flex justify-between p-4">
+                <p class="font-semibold">
+                  Ngoài lãi phải trả đều đặn, khi vay tại LOTTE Finance tôi còn
+                  phải trả những loại phí nào?
+                </p>
+                <button><img src="./public/xmark.svg" alt="Delete" /></button>
+              </div>
+              <div class="px-4 pb-8">
+                <p class="font-light text-justify">
+                  LOTTE Finance (LFVN) hỗ trợ làm thủ tục, hồ sơ vay hoàn toàn
+                  miễn phí cho khách hàng (KH). Dù hồ sơ được duyệt vay hay
+                  không, Quý khách không phải đóng bất kỳ chi phí nào trước khi
+                  ký hợp đồng vay.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col">
+              <div class="flex justify-between p-4">
+                <p class="font-semibold">
+                  Khoản trả góp của tôi sẽ được tính như thế nào?
+                </p>
+                <button><img src="./public/xmark.svg" alt="Delete" /></button>
+              </div>
+              <div class="px-4 pb-8">
+                <p class="font-light text-justify">
+                  Khoản thanh toán đều hàng tháng, trong đó lãi suất được tính
+                  trên cơ sở dư nợ giảm dần và số tiền gốc phải trả được điều
+                  chỉnh để đảm bảo khoản thanh toán đều vào mỗi tháng (ngoại trừ
+                  kỳ đầu và kỳ cuối, số tiền phải trả hàng tháng có thể khác).
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col">
+              <div class="flex justify-between p-4">
+                <p class="font-semibold">
+                  Lịch sử tín dụng của tôi sẽ bị ảnh hưởng như thế nào khi Khoản
+                  Vay bị quá hạn thanh toán?
+                </p>
+                <button><img src="./public/xmark.svg" alt="Delete" /></button>
+              </div>
+              <div class="px-4 pb-8">
+                <p class="font-light text-justify">
+                  Tùy theo số ngày quá hạn thanh toán khoản vay mà LFVN sẽ phân
+                  loại các nhóm nợ tín dụng khác nhau theo quy định nợ của Ngân
+                  hàng Nhà nước và báo cáo về trung tâm CIC. Đồng thời LFVN sẽ
+                  áp dụng lãi chậm trả theo quy định của hợp đồng tín dụng.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col">
+              <div class="flex justify-between p-4">
+                <p class="font-semibold">
+                  Số tiền tối đa tôi có thể vay là bao nhiêu?
+                </p>
+                <button><img src="./public/xmark.svg" alt="Delete" /></button>
+              </div>
+              <div class="px-4 pb-8">
+                <p class="font-light text-justify">
+                  KH được xem xét theo từng sản phẩm KH đăng kí. LFVN đang hỗ
+                  trợ vay lên đến 300 triệu. Để biết thêm chi tiết KH vui lòng
+                  liên hệ tổng đài 19006866 để được tư vấn cụ thể.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col">
+              <div class="flex justify-between p-4">
+                <p class="font-semibold">
+                  Thời hạn vay tối đa có thể áp dụng cho tôi là bao lâu?
+                </p>
+                <button><img src="./public/xmark.svg" alt="Delete" /></button>
+              </div>
+              <div class="px-4 pb-8">
+                <p class="font-light text-justify">
+                  Thời hạn vay linh hoạt theo từng sản phẩm và nhu cầu của KH,
+                  tối thiểu 06 tháng - tối đa 48 tháng. Tuy nhiên, thời hạn vay
+                  còn phụ thuộc vào độ tuổi lao động của KH, trong đó độ tuổi
+                  tối đa kết thúc hợp đồng vay là 60-65 tuổi.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col">
+              <div class="flex justify-between p-4">
+                <p class="font-semibold">
+                  Thời gian thẩm định hồ sơ mất bao lâu?
+                </p>
+                <button><img src="./public/xmark.svg" alt="Delete" /></button>
+              </div>
+              <div class="px-4 pb-8">
+                <p class="font-light text-justify">
+                  Tùy vào gói vay KH lựa chọn mà có thời gian thẩm định và duyệt
+                  hồ sơ vay khác nhau. Kể từ thời điểm KH cung cấp đủ hồ sơ,
+                  khoản vay sẽ được giải ngân chỉ sau 4 giờ.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col">
+              <div class="flex justify-between p-4">
+                <p class="font-semibold">
+                  Trường hợp tôi muốn thanh toán trước hạn thì phải làm thế nào?
+                </p>
+                <button><img src="./public/xmark.svg" alt="Delete" /></button>
+              </div>
+              <div class="px-4 pb-8">
+                <p class="font-light text-justify">
+                  KH lưu ý chỉ được tất toán trước hạn toàn bộ khoản vay không
+                  được tất toán trước hạn một phần KH vui lòng liên hệ số
+                  hotline 19006866 bằng số điện thoại Bên vay đã đăng ký để có
+                  thông tin về số tiền cũng như cách thức thanh toán. Khoản vay
+                  cũng có thể được hệ thống tự động tất toán trước hạn khi KH
+                  nộp đủ số tiền cần thiết cho LOTTE Finance.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col">
+              <div class="flex justify-between p-4">
+                <p class="font-semibold">
+                  Bảo hiểm khoản vay là gì? Có bắt buộc mua bảo hiểm khi ký hợp
+                  đồng vay hay không?
+                </p>
+                <button><img src="./public/xmark.svg" alt="Delete" /></button>
+              </div>
+              <div class="px-4 pb-8">
+                <p class="font-light text-justify">
+                  Bảo hiểm khoản vay là số tiền mà khách hàng chi trả để mua bảo
+                  hiểm cho hợp đồng vay của mình. Khi khách hàng mua bảo hiểm,
+                  trong trường hợp khách hàng không may gặp phải những rủi ro
+                  không lường trước được sau khi vay tín chấp, khiến khách hàng
+                  mất khả năng thanh toán, thì công ty bảo hiểm sẽ trả nợ thay
+                  khách hàng. Bảo hiểm khoản vay không chỉ bảo vệ khách hàng và
+                  gia đình trước các rủi ro, mà còn là một tiêu chí giúp khoản
+                  vay của khách hàng dễ dàng được duyệt hơn. Bảo hiểm khoản vay
+                  là chi phí không bắt buộc khi ký hợp đồng vay, khách hàng có
+                  quyền lựa chọn việc mua hoặc không mua bảo hiểm.
+                </p>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer
+      class="flex flex-col gap-3 sm:gap-10 justify-center items-center pt-10 sm:pt-44"
+    >
+      <img
+        src="./public/footer_logo.svg"
+        id="footer-background"
+        alt="Footer Logo"
+      />
+      <div class="container-box">
+        <div class="flex flex-col gap-2">
+          <hr class="border-[rgba(255,255,255,0.4)]" />
+          <div class="flex justify-between flex-col px-4 sm:px-0 sm:flex-row items-start sm:items-center text-white">
+            <table class="flex-1 text-sm sm:text-base">
+              <tr class="align-top">
+                <td><p class="font-semibold pb-2 sm:pb-4">Hotline:</p></td>
+                <td><p class="mx-8 pb-2 sm:pb-4">1900 6866</p></td>
+              </tr>
+              <tr class="align-top">
+                <td><p class="font-semibold pb-2 sm:pb-4">Địa chỉ:</p></td>
+                <td>
+                  <p class="max-w-[70%] mx-8 pb-2 sm:pb-4">
+                    Tầng 12A Tháp Tây, LOTTE Center, 54 Liễu Giai, Phường Cống
+                    Vị, Quận Ba Đình, Thành phố Hà Nội, Việt Nam.
+                  </p>
+                </td>
+              </tr>
+              <tr class="align-top">
+                <td><p class="font-semibold">Website:</p></td>
+                <td><p class="mx-8">www.lottefinance.vn</p></td>
+              </tr>
+            </table>
+            <div
+              class="border-t sm:border-l border-[rgba(255,255,255,0.4)] my-3 sm:my-0 w-full sm:w-0 sm:h-36 mx-auto"
+            ></div>
+            <div class="flex-1 flex flex-col gap-1 justify-center items-start sm:items-center">
+              <p class="font-semibold text-sm sm:text-base">Khám phá LOTTE Finance Mobile:</p>
+              <div class="flex gap-1 items-center">
+                <img
+                  src="./public/qr.svg"
+                  class="w-[110px] h-[110px] shadow-sm mb-1"
+                  alt="QR"
+                />
+                <div class="flex flex-col">
+                  <img src="./public/app_store.svg" alt="App Store" />
+                  <img src="./public/google_play.svg" alt="Google Play" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="border-[rgba(255,255,255,0.4)]" />
+        </div>
+      </div>
+      <p class="font-light text-white text-xs sm:text-base">
+        © 2023 Bản quyền thuộc về Lotte Finance
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
